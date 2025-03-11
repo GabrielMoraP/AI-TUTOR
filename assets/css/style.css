@@ -1,0 +1,106 @@
+/* Basic Normalization */
+* {
+    margin: 0;
+    /* Removes default margin from all elements */
+    padding: 0;
+    /* Removes default padding from all elements */
+    box-sizing: border-box;
+    /* Ensures padding and border are included in the element's total width and height */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Enables smooth scrolling for anchor links */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Sets a clean and readable font */
+    line-height: 1.6;
+    /* Improves text readability */
+    background-color: #f8f9fa;
+    /* Sets a light gray background */
+    color: #333;
+    /* Defines a dark gray text color for better contrast */
+}
+
+img {
+    max-width: 100%;
+    /* Ensures images do not overflow their containers */
+    height: auto;
+    /* Maintains the aspect ratio of images */
+    display: block;
+    /* Removes extra space below images caused by inline display */
+}
+
+a {
+    text-decoration: none;
+    /* Removes the default underline from links */
+    color: inherit;
+    /* Inherits the text color from the parent element */
+}
+
+ul,
+ol {
+    list-style: none;
+    /* Removes default bullet points or numbering from lists */
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    /* Ensures form elements use the same font as the surrounding text */
+    border: none;
+    /* Removes default borders */
+    outline: none;
+    /* Removes default focus outline */
+}
+
+button {
+    cursor: pointer;
+    /* Changes the cursor to a pointer when hovering over buttons */
+}
+
+table {
+    border-collapse: collapse;
+    /* Merges table borders into a single border */
+    width: 100%;
+    /* Makes tables take the full width of their container */
+}
+
+/* Scrollbar Customization */
+#chatbox {
+    /* Adds styles to the chatbox container */
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #9b4bff #2d2d2d;
+    /* Sets the scrollbar and background color */
+}
+
+#chatbox::-webkit-scrollbar {
+    width: 8px;
+    /* Scrollbar width */
+}
+
+#chatbox::-webkit-scrollbar-track {
+    background: #2d2d2d;
+    /* Track background color */
+    border-radius: 10px;
+    /* Rounded edges */
+}
+
+#chatbox::-webkit-scrollbar-thumb {
+    background-color: #9b4bff;
+    /* Thumb (handle) color */
+    border-radius: 10px;
+    /* Rounded edges */
+    border: 2px solid #2d2d2d;
+    /* Space between the track and the thumb */
+}
+
+/* Ensure the scrollbar appears only when necessary */
+#chatbox::-webkit-scrollbar {
+    display: block;
+}

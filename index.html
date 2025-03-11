@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Specifies the language as Spanish for proper accessibility and SEO -->
+<html lang="es">
+
+<head>
+  <!-- Character encoding to ensure text is displayed correctly -->
+  <meta charset="UTF-8">
+
+  <!-- Viewport configuration for responsive design, making the page mobile-friendly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- The title of the webpage that will appear in the browser tab -->
+  <title>AI Assistant</title>
+
+  <!-- Importing Tailwind CSS from a CDN to style the page quickly -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Linking to an external stylesheet for custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center h-screen">
+
+  <!-- Navbar Section -->
+  <nav class="bg-gray-900 text-white p-6 flex justify-between items-center w-full">
+    <!-- Main heading as an image -->
+    <img src="assets/img/rfsolutions_logo_white.png" alt="AI Assistant" class="w-32">
+
+    <!-- Button linking to the project's GitHub repository -->
+    <a href="https://github.com/GabrielMoraP/AI-TUTOR" target="_blank"
+      class="bg-purple-600 px-3 py-2 rounded-lg font-semibold">
+      GitHub
+    </a>
+  </nav>
+
+  <!-- Main content area for the chatbot -->
+  <main class="flex flex-col items-center justify-center p-6 lg:w-3/5 h-full min-h-0 w-full">
+
+    <!-- Chatbox where the AI responses and user inputs will appear -->
+    <div id="chatbox" class="flex-1 w-full rounded-lg bg-gray-900 text-center p-4 overflow-y-auto min-h-[200px]">
+      <!-- Welcome message shown initially in the chatbox -->
+      <h1 class="text-xl font-bold text-white">Welcome! Enter an octal number to convert.</h1>
+    </div>
+
+    <!-- Input area for the user to type their octal number or command -->
+    <div class="flex w-full items-center rounded-lg bg-gray-800 p-2 mt-4">
+      <!-- Text input field where the user will type their request -->
+      <input type="text" id="userInput" class="flex-grow bg-gray-800 text-white placeholder-gray-400 outline-none p-4"
+        placeholder="Example: Convert 221 octal to decimal">
+
+      <!-- Button to send the user's input to the system -->
+      <button onclick="sendMessage()" class="bg-purple-600 text-white font-bold px-3 py-2 rounded-lg">
+        ➤
+      </button> <!-- Action to send the input when clicked -->
+    </div>
+  </main>
+
+  <!-- Including the external JavaScript file that contains the logic for the chatbot -->
+  <script src="assets/js/scripts.js"></script>
+  <!-- Including the external JavaScript file that contains the events -->
+  <script src="assets/js/events.js"></script>
+
+</body>
+
+</html>
