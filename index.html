@@ -18,6 +18,8 @@
   <!-- Importing Tailwind CSS from a CDN to style the page quickly -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+
 </head>
 
 <body class="bg-gray-900 text-white flex flex-col items-center justify-center h-screen">
@@ -55,6 +57,9 @@
       </button> <!-- Action to send the input when clicked -->
     </div>
   </main>
+
+  <!-- Including the external JavaScript file that contains the model loading and processing -->
+  <script src="assets/js/model.js"></script>
 
   <!-- Including the external JavaScript file that contains the logic for the chatbot -->
   <script src="assets/js/messages.js"></script>
