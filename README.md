@@ -38,5 +38,5 @@ This project is open-source and available under the MIT License.
 If you’d like to contribute, feel free to fork the repository and submit a pull request!
 
 ## 📞 Contact and assets
-For any questions or issues, you can reach out via the [GitHub repository](https://github.com/GabrielMoraP/AI-TUTOR).
-Api repository [GitHub repository](https://github.com/GabrielMoraP/AI-TUTOR-API).
+### For any questions or issues, you can reach out via the [GitHub repository](https://github.com/GabrielMoraP/AI-TUTOR).
+### Api repository [GitHub repository](https://github.com/GabrielMoraP/AI-TUTOR-API).
