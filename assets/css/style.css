@@ -50,38 +50,24 @@ table {
     width: 100%; /* Makes tables take the full width of their container */
 }
 
-/* Custom Background Colors */
-.bg-gray-800 {
-    background: #2f2f2f !important; /* Dark gray background color with higher specificity */
-}
-
-.bg-gray-900 {
-    background: #212121 !important; /* Even darker gray background color with higher specificity */
-}
-
-/* Custom Text Color */
-.text-white {
-    color: rgb(245, 245, 245); /* Light grayish white text color */
-}
-
 /* Scrollbar Customization */
 #chatbox {
     scrollbar-width: thin; /* For Firefox: Makes the scrollbar thinner */
-    scrollbar-color: #424242 #212121; /* Sets the scrollbar and background color */
+    scrollbar-color: rgb(230, 230, 230) rgb(240, 240, 240);; /* Sets the scrollbar and background color */
 }
 
 #chatbox::-webkit-scrollbar {
-    width: 8px; /* Scrollbar width for WebKit-based browsers */
+    width: 5px; /* Scrollbar width for WebKit-based browsers */
     display: block; /* Ensures the scrollbar is always visible when content overflows */
 }
 
 #chatbox::-webkit-scrollbar-track {
-    background: #424242; /* Track background color */
+    background: rgb(240, 240, 240); /* Track background color */
     border-radius: 10px; /* Rounded edges for the scrollbar track */
 }
 
 #chatbox::-webkit-scrollbar-thumb {
-    background-color: #424242; /* Thumb (handle) color */
+    background-color: rgb(230, 230, 230); /* Thumb (handle) color */
     border-radius: 10px; /* Rounded edges for the scrollbar thumb */
-    border: 2px solid #424242; /* Space between the track and the thumb */
+    border: 1px solid rgb(240, 240, 240); /* Space between the track and the thumb */
 }
