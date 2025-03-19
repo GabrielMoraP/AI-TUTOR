@@ -15,14 +15,14 @@ function clearChat() {
     document.getElementById("confirmButton").onclick = function () {
         // Clears the chatbox and inserts a welcome message in Spanish with conversion examples
         document.getElementById("chatbox").innerHTML = `
-            <div class="bg-gray-900 text-white w-full">
-                <p class="text-2xl font-bold text-left my-6">
+            <div class="text-black w-full">
+                <p class="text-black text-2xl font-bold text-left my-6">
                 🟪 Bienvenido al asistente virtual de conversiones impulsado por IA.
                 </p>
-                <p class="text-xl font-bold text-left my-6">
+                <p class="text-black text-xl font-bold text-left my-6">
                 - ¿Con qué conversiones puedo ayudarte hoy?
                 </p>
-                <p class="text-left mb-6 text-gray-700">
+                <p class="text-left mb-6 text-gray-800">
                 Ejemplos:
                 <br>
                 - "Convertir 221 octal a decimal"
