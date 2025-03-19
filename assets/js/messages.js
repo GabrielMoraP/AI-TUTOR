@@ -9,9 +9,9 @@ async function sendMessage() {
 
   // Add the user's message to the chatbox
   chatbox.innerHTML += `
-      <div class="flex justify-end mt-2">
+      <div class="flex justify-end text-align-start mt-2">
           <div class="bg-purple-600 text-white p-3 rounded-lg max-w-[70%]">
-              <p>${input}</p>
+              <p class="text-left">${input}</p>
           </div>
       </div>
   `;
@@ -34,7 +34,7 @@ async function sendMessage() {
     // Display the bot's response in the chatbox
     chatbox.innerHTML += `
           <div class="flex mt-2">
-              <div class="bg-gray-900 text-white w-full">
+              <div class="text-black w-full">
                 <p class="text-2xl font-bold text-left my-6">✅ Conversión ${predictionResult.conversion_type}</p>
                 <hr>
                 <p class="text-xl font-bold text-left my-6">1️⃣ Numero introducido</p>
@@ -53,8 +53,8 @@ async function sendMessage() {
     // Handle errors (e.g., invalid input)
     console.error("Error con la predicción:", error);
     chatbox.innerHTML += `
-          <div class="flex mt-2">
-              <div class="bg-gray-900 text-white rounded-lg max-w-[70%]">
+          <div class="flex mt-2 text-black">
+              <div class="rounded-lg max-w-[70%]">
                   <p class="text-md text-left">🟡 Porfavor introduce una conversión valida</p>
               </div>
           </div>

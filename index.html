@@ -23,24 +23,24 @@
 
 </head>
 
-<body class="bg-gray-900 text-white flex flex-col items-center justify-center h-screen">
+<body class="text-black flex flex-col items-center justify-center h-screen">
 
   <!-- Navbar Section -->
-  <nav class="bg-gray-900 text-white p-2 flex justify-between items-center w-full">
+  <nav class="text-black p-2 flex justify-between items-center w-full shadow-lg">
     <!-- Logo -->
-    <img src="assets/img/rfsolutions_logo_white.png" alt="AI Assistant" class="w-32">
+    <img src="assets/img/rfsolutions_logo_black.png" alt="AI Assistant" class="w-32">
 
     <!-- Buttons: Clear Chat and GitHub Link -->
     <div class="flex items-center">
       <!-- Button to clear the chat -->
       <button onclick="clearChat()" class="bg-red-600 px-3 py-2 rounded-lg font-semibold mr-2">
-        <i class="fas fa-trash-alt"></i>
+        <i class="fas fa-trash-alt text-white"></i>
       </button>
 
       <!-- GitHub repository link -->
       <a href="https://github.com/GabrielMoraP/AI-TUTOR" target="_blank"
         class="bg-purple-600 px-3 py-2 rounded-lg font-semibold">
-        <i class="fab fa-github"></i>
+        <i class="fab fa-github text-white"></i>
       </a>
     </div>
   </nav>
@@ -50,15 +50,15 @@
 
     <!-- Chatbox where the conversation is displayed -->
     <div id="chatbox"
-      class="flex-1 w-full rounded-lg bg-gray-900 text-center overflow-y-auto min-h-[200px] text-white p-4">
-      <div class="bg-gray-900 text-white w-full">
-        <p class="text-2xl font-bold text-left my-6">
+      class="flex-1 w-full rounded-lg text-center overflow-y-auto min-h-[200px] text-blak p-4">
+      <div class="text-black w-full">
+        <p class="text-black text-2xl font-bold text-left my-6">
           🟪 Bienvenido al asistente virtual de conversiones impulsado por IA.
         </p>
-        <p class="text-xl font-bold text-left my-6">
+        <p class="text-black text-xl font-bold text-left my-6">
           - ¿Con qué conversiones puedo ayudarte hoy?
         </p>
-        <p class="text-left mb-6 text-gray-400">
+        <p class="text-left mb-6 text-gray-800">
           Ejemplos:
           <br>
           - "Convertir 221 octal a decimal"
@@ -77,9 +77,9 @@
     </div>
 
     <!-- Input area for the user to type their octal number or command -->
-    <div class="flex w-full items-center rounded-lg bg-gray-800 p-2 mb-2">
+    <div class="bg-gray-100 flex w-full items-center rounded-lg p-2 mb-2 shadow-lg">
       <!-- Text input field where the user will type their request -->
-      <input type="text" id="userInput" class="flex-grow bg-gray-800 text-white placeholder-gray-400 outline-none px-4"
+      <input type="text" id="userInput" class="bg-gray-100 flex-grow text-black placeholder-gray-500 outline-none px-4"
         placeholder="Ejemplo: Convierte 221 octal a decimal">
 
       <!-- Button to send the user's input to the system -->
@@ -95,7 +95,7 @@
     <!-- Background overlay -->
     <div class="fixed inset-0 bg-black opacity-50"></div>
     <!-- Modal content -->
-    <div class="bg-gray-800 p-6 rounded-lg z-10 relative">
+    <div class="bg-white p-6 rounded-lg z-10 relative text-black">
       <p class="mb-4">Seguro que quieres borrar las conversaciones?</p>
       <div class="flex justify-end">
         <!-- Confirm button to clear the chat -->
